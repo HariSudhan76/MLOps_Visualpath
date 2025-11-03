@@ -1,0 +1,34 @@
+# config.yaml
+
+# === Data Configurations ===
+data:
+  train_path: "data/train.csv"
+  test_path: "data/test.csv"
+  target_col: "price"
+
+# === Model Hyperparameters ===
+model:
+  type: ["RandomForest","Linear Regression","SVM","DecisionTree"]
+  n_estimators: 100
+  max_depth: 10
+  random_state: 42
+
+# === Training Parameters ===
+training:
+  epochs: 20
+  learning_rate: 0.001
+  batch_size: 32
+
+# === Logging and Artifacts ===
+logging:
+  level: "INFO"
+  log_file: "logs/train_log.json"
+
+artifacts:
+  model_dir: "models/"
+  reports_dir: "reports/"
+
+# === AWS or Cloud Settings (Optional) ===
+aws:
+  bucket_name: "my-mlops-bucket"
+  region: "us-east-1"
