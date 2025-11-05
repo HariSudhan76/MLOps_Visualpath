@@ -1,0 +1,2 @@
+"Initial price value added - version"
+"Assume have millions of records in it"
