@@ -1,6 +1,0 @@
-{
-  "project_name": "VisualPath_MLOps_Logging",
-  "env": "development",
-  "logging_config": "logging_config.yaml",
-  "version": "1.00"
-}
