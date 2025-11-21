@@ -1,9 +1,9 @@
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
 
 MODEL_REGISTRY = {
     "RandomForest": RandomForestClassifier,
-    "LogisticRegression": LogisticRegression
+    "DecisionTree": DecisionTreeClassifier
 }
 
 def get_model(model_type, **kwargs):

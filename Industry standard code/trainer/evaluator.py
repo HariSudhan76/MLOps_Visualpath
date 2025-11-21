@@ -12,9 +12,9 @@ def evaluate_classification(model, X_test, y_test):
 
     metrics = {
         "accuracy": accuracy_score(y_test, y_pred),
-        "precision": precision_score(y_test, y_pred),
-        "recall": recall_score(y_test, y_pred),
-        "f1_score": f1_score(y_test, y_pred),
+        "precision": precision_score(y_test, y_pred, average="weighted"),
+        "recall": recall_score(y_test, y_pred, average="weighted"),
+        "f1_score": f1_score(y_test, y_pred, average="weighted"),
         "confusion_matrix": confusion_matrix(y_test, y_pred).tolist()
     }
 
