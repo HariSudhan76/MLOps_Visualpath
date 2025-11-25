@@ -10,6 +10,18 @@ model:
     n_estimators: [50, 100, 150]
     max_depth: [5, 10, 15]
 
+  type:  "DecisionTree"
+  hyperparameters:
+      max_depth: [5, 10, 15]
+      criterion: ["gini", "entropy"]
+
+  type:  "LogisticRegression"
+  hyperparameters:
+      C: [0.1, 1.0, 10]
+      solver: ["lbfgs", "liblinear"]
+      max_iter: [100, 200]
+
+
 training:
   scaling: true
 
@@ -17,3 +29,11 @@ output:
   model_path: "artifacts/model.pkl"
   scaler_path: "artifacts/scaler.pkl"
   metrics_path: "artifacts/metrics.json"
+  preprocessor_path: "artifacts/preprocessor.pkl"  
+
+
+mlflow:
+  model_registry_map:
+    RandomForest: "RF_Model"
+    DecisionTree: "DT_Model"
+    LogisticRegression: "LR_Model"

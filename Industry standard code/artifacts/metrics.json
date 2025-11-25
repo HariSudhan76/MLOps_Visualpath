@@ -1,15 +1,15 @@
 {
-    "accuracy": 1.0,
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1_score": 1.0,
+    "accuracy": 0.975,
+    "precision": 0.9770833333333332,
+    "recall": 0.975,
+    "f1_score": 0.9751863354037267,
     "confusion_matrix": [
         [
-            18,
+            17,
             0,
             0,
             0,
-            0
+            1
         ],
         [
             0,
