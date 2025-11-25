@@ -1,0 +1,15 @@
+creation_timestamp: 1764039751024
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1764039751024
+model_id: m-edb4712d304140b3a436bce0d8981795
+name: DT_Model
+run_id: 799fcfc5003f4d0e8c22dc8d719d61d2
+run_link: null
+source: models:/m-edb4712d304140b3a436bce0d8981795
+status: READY
+status_message: null
+storage_location: file:///C:/Hari/Edu/Teaching/Visual%20Path/phase%203/Industry%20standard%20code/mlruns/650601935759087099/models/m-edb4712d304140b3a436bce0d8981795/artifacts
+user_id: null
+version: 1

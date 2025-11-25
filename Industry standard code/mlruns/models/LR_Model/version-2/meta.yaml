@@ -1,0 +1,15 @@
+creation_timestamp: 1764039755324
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1764039755324
+model_id: m-0ea052fd4c114f2fa2327e3a2883d58b
+name: LR_Model
+run_id: a6a3b78dd774434e98b908e5f4cc4e87
+run_link: null
+source: models:/m-0ea052fd4c114f2fa2327e3a2883d58b
+status: READY
+status_message: null
+storage_location: file:///C:/Hari/Edu/Teaching/Visual%20Path/phase%203/Industry%20standard%20code/mlruns/369814958573476144/models/m-0ea052fd4c114f2fa2327e3a2883d58b/artifacts
+user_id: null
+version: 2

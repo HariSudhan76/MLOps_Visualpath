@@ -1,0 +1,15 @@
+creation_timestamp: 1764039745309
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1764039745309
+model_id: m-5f68b4b6ab704d0298f217410e48867a
+name: RF_Model
+run_id: ac7fe67a62a74d66ba0f309cee06ae73
+run_link: null
+source: models:/m-5f68b4b6ab704d0298f217410e48867a
+status: READY
+status_message: null
+storage_location: file:///C:/Hari/Edu/Teaching/Visual%20Path/phase%203/Industry%20standard%20code/mlruns/124936407368994276/models/m-5f68b4b6ab704d0298f217410e48867a/artifacts
+user_id: null
+version: 1
