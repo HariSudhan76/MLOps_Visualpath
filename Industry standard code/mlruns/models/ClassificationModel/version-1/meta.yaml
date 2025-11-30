@@ -1,0 +1,15 @@
+creation_timestamp: 1763952725003
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1763952725003
+model_id: m-31d4691988744f1396536b84d793c893
+name: ClassificationModel
+run_id: fac7f9d305354330bb3da9a962414df6
+run_link: null
+source: models:/m-31d4691988744f1396536b84d793c893
+status: READY
+status_message: null
+storage_location: file:///C:/Hari/Edu/Teaching/Visual%20Path/phase%203/Industry%20standard%20code/mlruns/178569869067758914/models/m-31d4691988744f1396536b84d793c893/artifacts
+user_id: null
+version: 1

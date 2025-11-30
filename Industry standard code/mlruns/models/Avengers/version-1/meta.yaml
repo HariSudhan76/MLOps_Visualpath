@@ -1,0 +1,15 @@
+creation_timestamp: 1764036147470
+current_stage: None
+deployment_job_state: null
+description: ''
+last_updated_timestamp: 1764036147470
+model_id: ''
+name: Avengers
+run_id: e9a4fe82478d4d86a696b0a09a1422ae
+run_link: ''
+source: models:/LR_Model/1
+status: READY
+status_message: null
+storage_location: file:///C:/Hari/Edu/Teaching/Visual%20Path/phase%203/Industry%20standard%20code/mlruns/369814958573476144/models/m-31e2e3f4b74d441d8d62acb415ee69bb/artifacts
+user_id: null
+version: 1

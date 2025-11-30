@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Hari/Edu/Teaching/Visual%20Path/phase%203/Industry%20standard%20code/mlruns/178569869067758914/models/m-1703aded309147eba676ac0e0047fad8/artifacts
+creation_timestamp: 1763953684915
+experiment_id: '178569869067758914'
+last_updated_timestamp: 1763953693913
+model_id: m-1703aded309147eba676ac0e0047fad8
+model_type: null
+name: model
+source_run_id: cf241fe2581d42659e2dff32b1c6b776
+status: 2
+status_message: null

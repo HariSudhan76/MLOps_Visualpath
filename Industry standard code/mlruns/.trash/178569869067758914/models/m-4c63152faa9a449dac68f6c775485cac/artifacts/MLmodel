@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Hari/Edu/Teaching/Visual%20Path/phase%203/Industry%20standard%20code/mlruns/178569869067758914/models/m-4c63152faa9a449dac68f6c775485cac/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.4.2
+mlflow_version: 3.6.0
+model_id: m-4c63152faa9a449dac68f6c775485cac
+model_size_bytes: 148252
+model_uuid: m-4c63152faa9a449dac68f6c775485cac
+prompts: null
+run_id: 11cfc629ca574b9f84d912a7b50c7dd5
+utc_time_created: '2025-11-24 02:58:12.371752'

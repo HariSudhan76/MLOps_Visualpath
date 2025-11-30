@@ -1,0 +1,8 @@
+artifact_location: file:///C:/Hari/Edu/Teaching/Visual%20Path/phase%203/Industry%20standard%20code/mlruns/178569869067758914
+creation_time: 1763949806319
+experiment_id: '178569869067758914'
+last_update_time: 1763954306902
+lifecycle_stage: deleted
+name: MLFlow_Classification
+tags:
+  mlflow.experimentKind: custom_model_development

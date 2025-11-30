@@ -1,0 +1,32 @@
+artifact_path: file:///C:/Hari/Edu/Teaching/Visual%20Path/phase%203/Industry%20standard%20code/mlruns/650601935759087099/models/m-edb4712d304140b3a436bce0d8981795/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.4.2
+is_signature_from_type_hint: false
+mlflow_version: 3.6.0
+model_id: m-edb4712d304140b3a436bce0d8981795
+model_size_bytes: 3492
+model_uuid: m-edb4712d304140b3a436bce0d8981795
+prompts: null
+run_id: 799fcfc5003f4d0e8c22dc8d719d61d2
+saved_input_example_info:
+  artifact_path: input_example.json
+  serving_input_path: serving_input_example.json
+  type: ndarray
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 9]}}]'
+  outputs: '[{"type": "string", "name": "target", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-11-25 03:02:27.121810'

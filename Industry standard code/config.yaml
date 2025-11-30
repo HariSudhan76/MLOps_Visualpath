@@ -1,0 +1,42 @@
+data:
+  input_csv: "classification_dataset.csv"
+  target: "target"
+  test_size: 0.2
+  random_state: 23
+
+models:
+  - RandomForest
+  - DecisionTree
+  - LogisticRegression
+
+hyperparameters:
+  RandomForest:
+    n_estimators: [50, 100, 150]
+    max_depth: [5, 10, 15]
+
+  DecisionTree:
+    max_depth: [5, 10, 15]
+    criterion: ["gini", "entropy"]
+
+  LogisticRegression:
+    C: [0.1, 1.0, 10]
+    solver: ["lbfgs", "liblinear"]
+    max_iter: [100, 200]
+
+training:
+  scaling: true
+
+output:
+  model_path: "artifacts/model.pkl"
+  scaler_path: "artifacts/scaler.pkl"
+  metrics_path: "artifacts/metrics.json"
+  preprocessor_path: "artifacts/preprocessor.pkl"  
+
+
+mlflow:
+  model_registry_map:
+    RandomForest: "RF_Model"
+    DecisionTree: "DT_Model"
+    LogisticRegression: "LR_Model"
+
+

@@ -1,0 +1,15 @@
+creation_timestamp: 1763952936801
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1763952936801
+model_id: m-b790a1a114984ff9a8bb3aeba3d3ad30
+name: RandomForest
+run_id: f837eab5bd9a4b11ad64057038194417
+run_link: null
+source: models:/m-b790a1a114984ff9a8bb3aeba3d3ad30
+status: READY
+status_message: null
+storage_location: file:///C:/Hari/Edu/Teaching/Visual%20Path/phase%203/Industry%20standard%20code/mlruns/178569869067758914/models/m-b790a1a114984ff9a8bb3aeba3d3ad30/artifacts
+user_id: null
+version: 1

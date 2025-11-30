@@ -1,0 +1,1 @@
+{"C": [0.1, 1.0, 10], "solver": ["lbfgs", "liblinear"], "max_iter": [100, 200]}
