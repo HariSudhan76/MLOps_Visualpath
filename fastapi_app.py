@@ -49,6 +49,10 @@ class Passenger(BaseModel):
             }
         }
 
+@app.get("/")
+def read_root():
+    return {"message": "Hello World"}
+
 ## ---------Health endpoint--------
 @app.get("/health")
 def health():
@@ -91,4 +95,37 @@ def predit(passenger:Passenger):
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/predict_bulk")
+def predict_bulk(passengers: list[Passenger]):
+    try:
+        rows = [p.dict() for p in passengers]
+        input_df = pd.DataFrame(rows)
+
+        #Basic cleaning
+        input_df["age"] = input_df["age"].fillna(input_df["age"].median())
+        input_df["embarked"] = input_df["embarked"].fillna("S")
+
+        preds = model.predict(input_df)
+        probs = model.predict_proba(input_df)[:,1]
+
+        results = []
+        for i in range(len(preds)):
+            results.append({
+                "input": rows[i],
+                "prediction":int(preds[i]),
+                "probability_of_surviaval": float(round(probs[i],4))
+            })
+        
+        logging.info({"bulk_size":len(results)})
+        return {"results":results}
+    
+    except Exception as e:
+        logging.exception("Error during bulk prediction")
+        raise HTTPException(status_code=500, detail=str(e))
+    
+
+# ----------------------------- Run with uvicorn 
+
+if __name__ =="__main__":
+    uvicorn.run("fastapi_app:app",host="0.0.0.0",port=8000,reload=True)
+
 
