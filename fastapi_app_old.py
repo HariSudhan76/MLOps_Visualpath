@@ -16,13 +16,6 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
-## --------- Loading the model
-MODEL_PATH = "artifacts/titanic_model.pkl"
-
-model = joblib.load(MODEL_PATH)
-
-## --- FastAPI APP --------
-
 app = FastAPI(title="Titanic Survival Prediction API", version="1.0")
 
 ## -----------Pydantic input model (matches features used in training)-----
@@ -49,6 +42,18 @@ class Passenger(BaseModel):
             }
         }
 
+@app.on_event("startup")
+def startup():
+    global MODEL
+## --------- Loading the model
+    MODEL_PATH = "artifacts/titanic_model.pkl"
+
+    MODEL = joblib.load(MODEL_PATH)
+
+    ## --- FastAPI APP --------
+
+    
+
 @app.get("/")
 def read_root():
     return {"message": "Hello World"}
@@ -72,8 +77,8 @@ def predit(passenger:Passenger):
         if input_df["embarked"].isnull().any():
             input_df["embarked"] = input_df["embarked"].fillna("S")
         
-        preds = model.predict(input_df)
-        probs = model.predict_proba(input_df)[:,1]
+        preds = MODEL.predict(input_df)
+        probs = MODEL.predict_proba(input_df)[:,1]
 
         pred_label = int(preds[0])
         pred_proba = float(probs[0])
