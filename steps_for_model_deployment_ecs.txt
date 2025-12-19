@@ -27,6 +27,13 @@ Create Service
     4. use Import request and try to access the model
 
 
+prerequisite commandline tools:
+docker 
+aws
+kubectl
+eksctl
+
+
 
 EKSCTL tool installation
 
