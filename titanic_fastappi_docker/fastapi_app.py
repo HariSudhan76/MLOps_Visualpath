@@ -32,7 +32,7 @@ def health():
 
 @app.get("/")
 def root():
-    return {"message":"Titanic app is running"}
+    return {"message":"Titanic app is running, CI/CD Pipeline enabled"}
 
 @app.post("/predict")
 def predict(p: Passenger):
