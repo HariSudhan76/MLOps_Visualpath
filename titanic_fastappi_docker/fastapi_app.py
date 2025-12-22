@@ -28,7 +28,7 @@ def startup():
 
 @app.get("/health")
 def health():
-    return {"status": "ok"}
+    return {"status": "Titanic app is running, CI/CD Pipeline enabled"}
 
 @app.get("/cicd")
 def root():
