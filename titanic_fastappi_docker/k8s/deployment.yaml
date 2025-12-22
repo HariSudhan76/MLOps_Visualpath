@@ -15,5 +15,6 @@ spec:
       containers:
       - name: api
         image: 313110632968.dkr.ecr.us-east-1.amazonaws.com/titanic-fast-new-repo
+        imagePullPolicy: Always
         ports:
         - containerPort: 8000
