@@ -27,8 +27,8 @@ jobs:
       run: |
         docker build \
           -t titanic-api:latest \
-          -f titanic_fastapi_docker/Dockerfile \
-          titanic_fastapi_docker
+          -f ./titanic_fastapi_docker/Dockerfile \
+          ./titanic_fastapi_docker
 
     - name: Tag Docker image
       run: |
