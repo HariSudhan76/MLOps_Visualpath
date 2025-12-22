@@ -25,15 +25,18 @@ jobs:
 
     - name: Build Docker image
       run: |
+        cd titanic_fastapi_docker
         docker build -t titanic-fastapi-api:latest .
 
     - name: Tag Docker image
       run: |
+        cd titanic_fastapi_docker
         docker tag titanic-fastapi-api:latest \
         ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/titanic-fast-new-repo:latest
 
     - name: Push Docker image to ECR
       run: |
+        cd titanic_fastapi_docker
         docker push \
         ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/titanic-fast-new-repo:latest
 
