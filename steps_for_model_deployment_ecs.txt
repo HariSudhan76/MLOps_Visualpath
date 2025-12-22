@@ -1,0 +1,47 @@
+Model Training
+create pkl file out of Model training
+create API using fast api
+create docker image on the api uri
+          a. Push the docker image to docker hub
+
+   5. Cloud service - ECS/ EKS and deploy
+
+Steps for pushing the docker image:
+    Go to the docker hub url: https://hub.docker.com/
+     Create Repository- by giving a name
+     in local machine command prompt, type following commands to push the image to the repository
+docker tag image-name docker-hub-repo-name
+docker push
+
+docker image ls
+docker version
+
+
+ECS Deployment
+create a task definition from ECS service of AWS
+Create Cluster
+Create Service
+            a. See the service whether its active
+             b. go to the task option in service we created
+            c. inbound ip add to security group
+    4. use Import request and try to access the model
+
+
+prerequisite commandline tools:
+docker 
+aws
+kubectl
+eksctl
+
+
+
+EKSCTL tool installation
+
+in powershell with administrator previlege run below commands
+
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+choco install eksctl
+
+
+
