@@ -30,6 +30,10 @@ def startup():
 def health():
     return {"status": "ok"}
 
+@app.get("/msg")
+def msg():
+    return {"message":"CD/CD pipeline working"}
+
 @app.post("/predict")
 def predict(p: Passenger):
     df = pd.DataFrame([p.dict()])
