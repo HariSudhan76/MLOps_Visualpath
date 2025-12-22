@@ -30,9 +30,9 @@ def startup():
 def health():
     return {"status": "ok"}
 
-@app.get("/")
+@app.get("/cicd")
 def root():
-    return {"message":"Titanic app is running, CI/CD Pipeline enabled"}
+    return {"status":"Titanic app is running, CI/CD Pipeline enabled"}
 
 @app.post("/predict")
 def predict(p: Passenger):
