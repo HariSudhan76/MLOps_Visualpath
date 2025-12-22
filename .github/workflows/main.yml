@@ -29,12 +29,12 @@ jobs:
           -t titanic-api:latest \
           -f titanic_fastappi_docker/Dockerfile \
           titanic_fastappi_docker
-
+    
     - name: Tag Docker image
       run: |
-        docker tag titanic-fastapi-api:latest \
+        docker tag titanic-api:latest \
         ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/titanic-fast-new-repo:latest
-
+    
     - name: Push Docker image to ECR
       run: |
         docker push \
