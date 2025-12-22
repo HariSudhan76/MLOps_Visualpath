@@ -5,7 +5,7 @@ import joblib
 import pandas as pd
 import os
 
-app = FastAPI(title="Titanic API")
+app = FastAPI(title="Titanic FAST API Demo for MLOPs Class")
 
 MODEL = None
 
